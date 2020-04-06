@@ -11,7 +11,7 @@
 
     <div class="quellepuissance">
       Quelle puissance!<br />
-      <div>
+      <div class="survey">
         Commentaires
       </div>
     </div>
@@ -20,11 +20,20 @@
     (function () {
       const vache = document.querySelector('.cow');
       const quellepuissance = document.querySelector('.quellepuissance');
+      const survey = document.querySelector('.survey');
 
       vache.addEventListener('mouseover', () => {
         quellepuissance.style.display === 'none'
           ? (quellepuissance.style.display = 'block')
           : (quellepuissance.style.display = 'none');
+      });
+
+      survey.addEventListener('mouseover', () => {
+        survey.style.cursor = 'pointer';
+      });
+
+      survey.addEventListener('click', () => {
+        window.location = 'https://surveymonkey.com';
       });
     })();
   </script>

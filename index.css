@@ -45,3 +45,14 @@ img {
   left: 0px;
   margin-left: -20px;
 }
+
+.survey {
+  padding: 1rem;
+  background-color: lightgrey;
+  color: #000;
+  margin: 0.5rem;
+}
+
+.survey:hover {
+  cursor: 'pointer';
+}

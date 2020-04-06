@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <img src="quelle-puissance.png" alt="QUELLE PUISSANCE!" />
+    <img class="cow" src="quelle-puissance.png" alt="QUELLE PUISSANCE!" />
+
+    <div class="quellepuissance">
+      Quelle puissance!<br />
+      <div>
+        Commentaires
+      </div>
+    </div>
   </body>
+  <script>
+    (function () {
+      const vache = document.querySelector('.cow');
+      const quellepuissance = document.querySelector('.quellepuissance');
+
+      vache.addEventListener('mouseover', () => {
+        quellepuissance.style.display === 'none'
+          ? (quellepuissance.style.display = 'block')
+          : (quellepuissance.style.display = 'none');
+      });
+    })();
+  </script>
 </html>

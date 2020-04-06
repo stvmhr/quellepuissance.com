@@ -20,3 +20,28 @@ body {
 img {
   width: 30%;
 }
+
+.quellepuissance {
+  position: relative;
+  font-family: arial;
+  font-size: 1.1em;
+  background: #a53d38;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.quellepuissance:after {
+  /* [THESE WILL CREATE THE TRIANGLE] */
+  content: '';
+  border: 20px solid transparent;
+  border-top-color: #a53d38;
+  border-bottom: 0;
+
+  /* [THESE WILL POSITION THE TRIANGLE] */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-left: -20px;
+}
